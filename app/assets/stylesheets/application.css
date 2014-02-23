@@ -1,0 +1,165 @@
+/*
+ *= require twitter/bootstrap
+ *= require fonts
+ *= require_self
+ *= require_tree .
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #eee;
+    color: #666;
+    box-shadow: inset 0 40px 40px -40px rgba(0,0,0,.3);
+    font-family: 'Noto Serif', serif;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
+}
+
+#push {
+    height: 100px;
+}
+
+#top {
+    margin: 0;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+}
+
+footer {
+    height: 60px;
+}
+
+footer .contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-font {
+    font-family: 'isocpeur';
+    text-transform: lowercase;
+    color: #00008F;
+}
+
+a, a:focus, a:hover {
+    color: #666;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus {
+    color: #333;
+    text-shadow: none;
+    background-color: #666;
+    border: 1px solid #fff;
+}
+
+#header {
+    padding-top: 40px;
+}
+
+#splash  {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#people {
+    text-align: center;
+}
+
+#people .thumbnail {
+    width: 250px;
+    display: inline-block;
+    margin: 30px;
+}
+
+.masthead-brand {
+    font-size: 45px;
+    margin: 0;
+}
+
+.masthead-nav {
+    margin-top: 5px;
+}
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 19px;
+    font-weight: bold;
+    color: #666; /* IE8 proofing */
+    color: rgba(120,120,120,.75);
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #B4B4B4;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #666;
+    border-bottom-color: #666;
+}
+
+.cover {
+    padding: 0 20px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.cover .cover-heading {
+    font-size: 40px;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 700px;
+    }
+}

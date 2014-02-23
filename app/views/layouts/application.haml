@@ -1,0 +1,32 @@
+!!! 5
+%html
+    %head
+        %title Adams Grumbles
+        = stylesheet_link_tag "application", "//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic"
+        = javascript_include_tag "application"
+    %body
+        #wrap
+            #top
+            #header.container
+                .row
+                    .span5
+                        %h1.masthead-brand.logo-font Adams Grumbles LLP
+                    .span7
+                        %ul.nav.masthead-nav
+                            %li{:class => current_page?(root_path) ? "active" : ""}
+                                %a{:href => root_path} Home
+                            %li{:class => current_page?(about_path) ? "active" : ""}
+                                %a{:href => about_path} About
+                            %li{:class => (current_page?(people_path) || current_page?(people_adams_path) || current_page?(people_grumbles_path)) ? "active" : ""}
+                                %a{:href => people_path} People
+                            %li{:class => current_page?(contact_path) ? "active" : ""}
+                                %a{:href => contact_path} Contact
+            = yield
+            #push
+        %footer
+            .container
+                .contents
+                    .pull-left
+                        %span &copy; Copyright 2014 Adams Grumbles LLP
+                    .pull-right
+                        %span 287 E. 6th St | Suite 140 | Minneapolis, MN 55402
