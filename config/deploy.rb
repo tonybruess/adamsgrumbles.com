@@ -6,7 +6,7 @@ set :rvm_ruby_string, "ruby-2.0.0-p353"
 set :rvm_type, :system
 
 set :application, "adamsgrumbles"
-set :repository, "git@github.com:mrapple/adamsgrumbles.com.git"
+set :repository, "git@github.com:OvercastNetwork/adamsgrumbles.com.git"
 
 set :scm, :git
 set :branch, 'master'
