@@ -2,26 +2,32 @@
 %html
     %head
         %title Adams Grumbles
-        = stylesheet_link_tag "application", "//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic"
+        = stylesheet_link_tag "application", "//fonts.googleapis.com/css?family=Gafata"
         = javascript_include_tag "application"
     %body
         #wrap
             #top
-            #header.container
-                .row
-                    .span5
-                        %h1.masthead-brand.logo-font Adams Grumbles LLP
-                    .span7
-                        %ul.nav.masthead-nav
-                            %li{:class => current_page?(root_path) ? "active" : ""}
-                                %a{:href => root_path} Home
-                            %li{:class => current_page?(about_path) ? "active" : ""}
-                                %a{:href => about_path} About
-                            %li{:class => (current_page?(people_path) || current_page?(people_adams_path) || current_page?(people_grumbles_path)) ? "active" : ""}
+            #header
+                .container
+                    .row
+                        .span12
+                            %a#logo{:href => root_path}
+                                %h1.masthead-brand Adams Grumbles LLP
+            .container
+                .row-fluid
+                    .span10#main
+                        = yield
+                        - p controller.action_name
+                    .span2
+                        %ul.nav.nav-pills{:data => {:spy => "affix", :offset => {:top => "79"}}}
+                            %li{:class => current_page?(work_path) ? "active" : ""}
+                                %a{:href => work_path} Work
+                            %li{:class => (controller.controller_name.include? "people") ? "active" : ""}
                                 %a{:href => people_path} People
+                            %li{:class => (current_page?(resources_path)) ? "active" : ""}
+                                %a{:href => resources_path} Resources
                             %li{:class => current_page?(contact_path) ? "active" : ""}
                                 %a{:href => contact_path} Contact
-            = yield
             #push
         %footer
             .container
@@ -29,4 +35,4 @@
                     .pull-left
                         %span &copy; Copyright 2014 Adams Grumbles LLP
                     .pull-right
-                        %span 287 E. 6th St | Suite 140 | Minneapolis, MN 55402
+                        %span 287 6th St SE | Suite 140 | Minneapolis, MN 55402

@@ -3,16 +3,10 @@ class ApplicationController < ActionController::Base
 	def index
 	end
 
-    def about
+    def work
     end
 
-    def people
-    end
-
-    def people_adams
-    end
-
-    def people_grumbles
+    def resources
     end
 
     def contact

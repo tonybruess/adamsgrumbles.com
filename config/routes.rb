@@ -1,10 +1,12 @@
 AdamsGrumbles::Application.routes.draw do
     root :to => 'application#index'
 
-    get 'people', :to => 'application#people'
-    get 'people/adams', :to => 'application#people_adams'
-    get 'people/grumbles', :to => 'application#people_grumbles'
-
-    get 'about', :to => 'application#about'
+    get 'work', :to => 'application#work'
+    get 'resources', :to => 'application#resources'
     get 'contact', :to => 'application#contact'
+
+    get 'people', :to => 'people#index'
+    get 'people/adams', :to => 'people#adams'
+    get 'people/grumbles', :to => 'people#grumbles'
+    get 'people/nanzig', :to => 'people#nanzig'
 end

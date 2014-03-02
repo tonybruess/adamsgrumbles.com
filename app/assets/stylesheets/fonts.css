@@ -1,11 +1,10 @@
 @font-face {
-    font-family: 'isocpeur';
-    src: url('/assets/isocpeur-webfont.eot');
-    src: url('/assets/isocpeur-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/isocpeur-webfont.woff') format('woff'),
-         url('/assets/isocpeur-webfont.ttf') format('truetype'),
-         url('/assets/isocpeur-webfont.svg#isocpeurregular') format('svg');
+    font-family: 'OratorStd';
+    src: url('/assets/OratorStd.eot');
+    src: url('/assets/OratorStd.eot?#iefix') format('embedded-opentype'),
+         url('/assets/OratorStd.woff') format('woff'),
+         url('/assets/OratorStd.ttf') format('truetype'),
+         url('/assets/OratorStd.svg') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
