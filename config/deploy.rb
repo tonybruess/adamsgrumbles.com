@@ -2,7 +2,7 @@ require "bundler/capistrano"
 require "rvm/capistrano"
 load "deploy/assets"
 
-set :rvm_ruby_string, "ruby-2.0.0-p353"
+set :rvm_ruby_string, "ruby-2.1.2"
 set :rvm_type, :system
 
 set :application, "adamsgrumbles"
@@ -15,7 +15,7 @@ set :user, 'deploy'
 set :port, 50210
 set :use_sudo, false
 
-server 'phx06.oc.tc', :app, :db, :web, :primary => true
+server 'hosted.oc.tc', :app, :db, :web, :primary => true
 
 default_environment["RAILS_ENV"] = 'production'
 

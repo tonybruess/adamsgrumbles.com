@@ -1,6 +1,6 @@
 pid "/home/deploy/apps/adamsgrumbles/shared/pids/unicorn.pid"
 
-listen 3003
+listen 3001
 worker_processes 2
 timeout 30
 preload_app true
