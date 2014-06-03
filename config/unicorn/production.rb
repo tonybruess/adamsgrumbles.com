@@ -1,7 +1,7 @@
 pid "/home/deploy/apps/adamsgrumbles/shared/pids/unicorn.pid"
 
 listen 3001
-worker_processes 2
+worker_processes 1
 timeout 30
 preload_app true
 stderr_path "/home/deploy/apps/adamsgrumbles/shared/log/unicorn.err.log"
