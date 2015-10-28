@@ -1,7 +1,11 @@
 !!! 5
 %html
     %head
-        %title Adams Grumbles
+        %title
+            - if content_for? :title
+                Adams Grumbles - #{yield :title}
+            - else
+                Adams Grumbles
         = stylesheet_link_tag "application", "//fonts.googleapis.com/css?family=Gafata"
         = javascript_include_tag "application"
     %body
