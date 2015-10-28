@@ -9,6 +9,9 @@ class PeopleController < ApplicationController
     def grumbles
     end
 
+    def wilhoit
+    end
+
     def nanzig
     end
 end
