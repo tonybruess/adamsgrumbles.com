@@ -30,6 +30,8 @@
                                 %a{:href => people_path} People
                             %li{:class => (current_page?(resources_path)) ? "active" : ""}
                                 %a{:href => resources_path} Resources
+                            %li
+                                %a{:href => asset_path('careers.pdf'), :target => :blank} Careers
                             %li{:class => current_page?(contact_path) ? "active" : ""}
                                 %a{:href => contact_path} Contact
             #push
